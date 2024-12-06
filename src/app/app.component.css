@@ -1,0 +1,97 @@
+body {
+    background-color: #1A202C;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar button {
+    color: white;
+    letter-spacing: 2px;
+}
+
+mat-toolbar {
+    background-color: #07091A;
+    margin-bottom: 20px;
+    height: 68.061px;
+}
+
+.img {
+    height: auto;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.FabLabWLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    max-height: inherit;
+}
+
+.FabLab {
+    display: block;
+    padding: 0px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.descripcion {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0.4375em 0 0;
+}
+
+p {
+    color: white;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor {
+    display: grid;
+    place-items: center;
+}
+
+section{
+    margin: 0, auto;
+}
+
+.productTitle {
+    display: grid;
+    place-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0.4375em 0 0;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

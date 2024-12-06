@@ -1,0 +1,12 @@
+<body class="body">
+    <div class="product">
+        <h2>{{ product.name }}</h2>
+        <p>Precio: ${{ product.price / 100 }}</p>
+        <button (click)="togglePopup()">Pagar</button>
+    </div>
+    <div class="modal" [ngClass]="{'show': showPopup}">
+        <div class="modal-content">
+            <PaymentComponent></PaymentComponent>
+        </div>
+    </div>
+</body>

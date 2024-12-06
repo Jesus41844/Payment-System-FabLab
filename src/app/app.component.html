@@ -1,0 +1,26 @@
+<body>
+    <nav class="navbar">
+        <mat-toolbar>
+            <div class="FabLabWLogo">
+                <img class="logo" src="https://fablab.utp.ac.pa/wp-content/uploads/2022/02/fablab_nav_logo.svg" alt="Logo" width="50">
+                <div class="FabLab">
+                    <p class="title">FAB LAB UTP</p>
+                    <p class="descripcion">Centro de Fabricación para la Innovación Tecnológica</p>
+                </div>
+            </div>
+            <button mat-button>Inicio</button>
+            <button mat-button>Sobre Nosotros</button>
+            <button mat-button>Eventos</button>
+            <button mat-button>Equipos</button>
+            <button mat-button>Proyectos</button>
+            <button mat-button>Contactanos</button>
+            <button mat-button>Comprar</button>
+        </mat-toolbar>
+    </nav>
+    <div class="contenedor">
+        <section>
+            <AppProduct class="product"></AppProduct>
+        </section>
+    </div>
+    <router-outlet />
+</body>
