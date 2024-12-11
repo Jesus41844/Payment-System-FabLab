@@ -1,5 +1,6 @@
 body {
     background-color: #1A202C;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -72,12 +73,11 @@ div {
 }
 
 .contenedor {
-    display: grid;
-    place-items: center;
-}
-
-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 0, auto;
+    height: 70vh;
 }
 
 .productTitle {

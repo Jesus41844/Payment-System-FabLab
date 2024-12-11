@@ -1,11 +1,14 @@
+<!-- Componente para mostrar los productos junto al modal de pago -->
 <body class="body">
     <div class="product">
-        <h2>{{ product.name }}</h2>
-        <p>Precio: ${{ product.price / 100 }}</p>
-        <button (click)="togglePopup()">Pagar</button>
+        <h2>{{ name }}</h2><!--Muestra el nombre del producto-->
+        <p>Precio: ${{ price / 100 }}</p><!--Muestra el precio del producto dividido entre 100 para convertirno a dolares-->
+        <button (click)="togglePopup()">Pagar</button><!--Boton para mostrar el popup de pago-->
     </div>
+    <!--Este segmento de codigo se muestra cada que le dan click al boton de pagar-->
     <div class="modal" [ngClass]="{'show': showPopup}">
         <div class="modal-content">
+            <!--Componente de pago que se muestra en el modal-->
             <PaymentComponent></PaymentComponent>
         </div>
     </div>
