@@ -76,3 +76,4 @@ Este proyecto es una aplicación web que utiliza Angular en el frontend y Expres
 ## Notas Adicionales
 - Asegúrate de tener configurado el token de acceso de Square en las variables de entorno.
 - Utiliza el entorno de sandbox para pruebas antes de pasar a producción.
+- Ir a `https://developer.squareup.com/console/en/apps` para obtener la Sandbox Application ID
