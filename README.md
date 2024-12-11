@@ -1,59 +1,78 @@
-# PaymentSystemFabLab
+# Documentación del Proyecto
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+## Introducción
+Este proyecto es una aplicación web que utiliza Angular en el frontend y Express con la API de Square en el backend para procesar pagos. El propósito del proyecto es proporcionar una solución simple y efectiva para gestionar pagos en línea.
 
-## Development server
+## Instalación
+### Requisitos
+- Node.js y npm instalados en tu máquina.
+- Una cuenta de Square para obtener el token de acceso.
+- Angular CLI instalado globalmente (`npm install -g @angular/cli`).
 
-To start a local development server, run:
+### Pasos para Instalar el Proyecto
+1. Clona el repositorio:
+    ```bash
+    git clone https://github.com/Jesus41844/Payment-System-FabLab.git
+    ```
+2. Navega al directorio del proyecto:
+    ```bash
+    cd tu-repositorio
+    ```
+3. Instala las dependencias del backend:
+    ```bash
+    npm install
+    ```
+4. Navega al directorio del frontend:
+    ```bash
+    cd frontend
+    ```
+5. Instala las dependencias del frontend:
+    ```bash
+    npm install
+    ```
 
-```bash
-ng serve
-```
+### Configuración Inicial
+- Crea un archivo `.env` en la raíz del proyecto y añade tu token de acceso de Square:
+    ```env
+    SQUARE_ACCESS_TOKEN=tu-token-de-acceso
+    ```
+- Configura el entorno de desarrollo en Angular:
+    ```bash
+    ng serve
+    ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Uso
+### Instrucciones Detalladas
+1. **Iniciar el Servidor Backend**:
+    ```bash
+    npm start
+    ```
+    El servidor estará corriendo en `http://localhost:3000`.
 
-## Code scaffolding
+2. **Iniciar el Servidor Frontend**:
+    ```bash
+    cd frontend
+    ng serve
+    ```
+    La aplicación estará disponible en `http://localhost:4200`.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+3. **Procesar un Pago**:
+    - Navega a la página de productos.
+    - Selecciona un producto y haz clic en "Pagar".
+    - Completa el formulario de pago y confirma.
 
-```bash
-ng generate component component-name
-```
+## Tecnologías Usadas
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Frontend
+- **Angular CLI**: 19.0.2
+- **Angular Material**: 18.0.2
 
-```bash
-ng generate --help
-```
+### Backend
+- **Node.js**: 22.12.0 con Express
 
-## Building
+### Pasarela de Pago
+- **Square**: 2024.11.20
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Notas Adicionales
+- Asegúrate de tener configurado el token de acceso de Square en las variables de entorno.
+- Utiliza el entorno de sandbox para pruebas antes de pasar a producción.
