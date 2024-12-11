@@ -12,7 +12,7 @@ import { payments } from '@square/web-sdk';
 export class PaymentComponent implements OnInit{
   //Metodo que se ejecuta al inicializar el componente
   async ngOnInit() {// Inicializa la instancia de pagos con el ID del sandbox de Square
-    const paymentsInstance = await payments('sandbox-sq0idb-dYndKND591Z6jhejKXTqwQ');
+    const paymentsInstance = await payments('Your Sandbox Application ID');
 
     // Crea una instancia de tarjeta y la adjunta al contenedor con ID 'card-container'
     const card = await paymentsInstance.card();
